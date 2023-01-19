@@ -1,0 +1,18 @@
+<html>
+<body>
+<b><u>Capitalize The First Letter Of Each Word</u></b><br>
+<script>
+function uppercase(words) 
+{
+   var separateWord = words.toLowerCase().split(' ');
+   for (var i = 0; i < separateWord.length; i++) 
+   {
+      separateWord[i] = separateWord[i].charAt(0).toUpperCase() + separateWord[i].substring(1);
+   }
+   return separateWord.join(' ');
+}
+const string = prompt('Enter a string: ');
+document.write(uppercase(string));
+</script>
+</body>
+</html>
